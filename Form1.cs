@@ -6,5 +6,10 @@ namespace WillFormApp1
         {
             InitializeComponent();
         }
+
+        private void willFormStartButton_Click(object sender, EventArgs e)
+        {
+            Console.WriteLine("Button was clicked!");
+        }
     }
 }

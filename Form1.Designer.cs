@@ -28,12 +28,35 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            willFormStartButton = new Button();
+            SuspendLayout();
+            // 
+            // willFormStartButton
+            // 
+            willFormStartButton.Location = new Point(338, 197);
+            willFormStartButton.Name = "willFormStartButton";
+            willFormStartButton.Size = new Size(131, 40);
+            willFormStartButton.TabIndex = 0;
+            willFormStartButton.Text = "Start Form";
+            willFormStartButton.UseVisualStyleBackColor = true;
+            willFormStartButton.Click += willFormStartButton_Click;
+            // 
+            // Form1
+            // 
+            AcceptButton = willFormStartButton;
+            AccessibleDescription = "Will form that you can use to answer cool questions";
+            AccessibleName = "Will form";
+            AutoScaleDimensions = new SizeF(12F, 30F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(willFormStartButton);
+            Name = "Form1";
+            Text = "Will's Form";
+            ResumeLayout(false);
         }
 
         #endregion
+
+        private Button willFormStartButton;
     }
 }
